@@ -1,0 +1,158 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+*{
+    margin: 0;
+    padding: 0;  
+    
+
+
+}
+body {
+    position: fixed;
+
+}
+nav{
+    position:relative;
+    height: 5vh;
+    width: 100vw;
+    color: white;
+    opacity: 0.9;
+    background: linear-gradient(180deg, #000000, #535252);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+
+}
+nav p{
+    font-size: larger;
+    font-weight: bold; 
+}
+.container{
+    color: white;
+    position:relative;
+    background: linear-gradient(45deg, #000000, #ffffff);
+
+display: flex;
+justify-content: center;
+width: 100vw;
+height: 100vh;
+
+opacity: 0.9;
+ 
+   
+}
+
+.convertor{
+    position:relative;
+flex-direction: column;
+    display: flex;
+    width: 50%;
+    height: 50%;
+ border-radius: 5vh;
+ padding: 20px;
+ gap: 20px;
+ align-items: center;
+ justify-content: center;
+ background-color: black;
+ opacity: 0.8;
+ margin-top:10vh ;
+ transform-style: preserve-3d;
+ perspective: 500px;
+
+
+
+}
+.select{
+    display: flex;
+    align-items: center;
+justify-content: center;
+    display: flex;
+    gap: 2vw;
+}
+.select img{
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+select{
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 4px;
+    opacity: 1;
+    font-weight: 700;
+}
+.country{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid rgb(255, 253, 253);
+    padding: 5px;
+    border-radius: 5px;
+}
+.input{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+P{
+    font-weight: bold;
+    font-size: large;
+    padding: 10px;
+}
+.input input{
+    width: 60%;
+    height: 30%;
+    padding: 5px;
+    padding-left: 10px;
+    font-weight: 700;
+    
+}
+.Button{
+    width: 60%;
+    height: 10%;
+    transform-style: inherit;
+
+    transition: transform 0.3s ease;
+
+    font-weight: bold;
+
+}
+.Button:hover{
+    transform: translateZ(10px);
+
+
+}
+@media(max-width:972px){
+
+
+    .select{
+    flex-direction:column;
+    }
+    .convertor h2{
+        font-size: large;
+    }
+    .Button{
+        width: 70%;
+        font-weight: bold
+    }
+    .convertor{
+        width: 80%;
+        height: 70%;
+        margin-top: 5vh;
+        padding: 0;
+        justify-content: flex-start;
+    }
+    .select{
+        gap: 1vh;
+    }
+    #exchangedata{
+        font-size: large;
+    }
+}
